@@ -8,7 +8,7 @@
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="text-gray-600">
-  <header class="flex">
+  <header class="flex fixed z-10 w-full bg-white">
     <div class="flex items-center w-1/4 pl-4">
       <button class="pl-2 pr-6">
         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
@@ -41,11 +41,11 @@
       </button>
     </div>
   </header>
-  <aside class="w-64">
+  <aside class="w-64 max-h-screen overflow-auto fixed top-0 pt-12">
     <section class="py-2 border-b">
       <ul>
         <li>
-          <a href="#" class="flex items-center px-6 py-2 text-sm hover:bg-gray-100">
+          <a href="#" class="flex items-center px-6 py-2 text-sm font-medium text-gray-800 bg-gray-200 hover:bg-gray-300">
             <svg class="w-6 h-6 mr-6 text-red-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
             <span>Home</span>
           </a>
@@ -164,7 +164,7 @@
     </section>
     <section class="py-2 border-b">
       <div class="uppercase text-sm font-semibold px-6 py-2">
-        Best of YouTube
+        MORE FROM YOUTUBE
       </div>
       <ul>
         <li>
